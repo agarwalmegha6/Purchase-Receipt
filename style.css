@@ -1,0 +1,48 @@
+#header   {
+	background-color:blue;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	float: left;
+	width: 260px;
+}
+#footer   {
+	width: 260px;
+	background-color:blue;
+	color: white;
+	clear: both;
+	text-align: center;
+	padding: 5px;
+	float: left;
+}
+#container {
+	width: 300px;
+}
+fieldset:not(#ship){
+	text-align: right;
+	float: left;
+}
+#container input{
+	width: 100px;
+	float: right;
+}
+#sizeid {
+	text-align: left;
+}
+#ship {
+border-style: solid;
+border-color: black;
+border-width: 2px;
+float:left;
+width: 350px;
+}
+#receiptid {
+	border-style: solid;
+    border-width: 2px;
+    width: 400px;
+	background-color:pink;
+	color: black;
+	float: left;
+	clear: both;
+	padding: 5px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>A4 Megha Agarwal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+<h3>Widget Purchase</h3>
+</div>
+<br><br><br><br><br>
+<div id="container">
+<form action="receipt.php" method="post">
+  <fieldset>
+  First Name:
+  <input type="text" id="firstName" name="firstName" pattern="[A-Za-z]*" required />
+  <br><br>
+  Last Name:
+  <input type="text" id="lastName" name="lastName" pattern="[A-Za-z]*" required />
+  <br><br>
+  Phone:
+  <input type="text" id="phoneNumber" name="phoneNumber" pattern="^(\+0?1\s)?\(?\d{3}\)?[\s.- ]\d{3}[\s.-]\d{4}$" required />
+  <br><br>
+  City:
+  <input type="text" id="city" name="city" pattern="[A-Za-z]*" required />
+  <br><br>
+  State:
+  <select name="state" size="1" required >
+  <option selected value="">Select One</option>
+  <option value="Arizona">Arizona</option>
+  <option value="California">California</option>
+  <option value="Washington">Washington</option>
+  </select>
+  <br><br>
+  Zip:
+  <input type="text" id="zip" name="zip" pattern="[0-9]{5}" maxlength="5" required />
+  <br><br>
+  <fieldset id="sizeid">
+  <legend>Size:</legend>
+  <input type="radio" id="size" name="size" value="small" checked required />Small $2.00
+  <br>
+  <input type="radio" id="size" name="size" value="medium" required />Medium $2.65
+  <br>
+  <input type="radio" id="size" name="size" value="large" required />Large $2.99
+  <br>
+</fieldset>
+<br><br><br><br><br><br>
+<input type="number" id="quantity" name="quantity" pattern="1-5" min="1" max="5" required />Quantity (1-5)
+<br><br>
+<input type="submit" id="continueButton" name="continueButton" value="Continue">
+</fieldset>
+</form>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+<div id="footer">
+	<h3>Megha Agarwal</h3>
+</div>
+</body>
+</html>
